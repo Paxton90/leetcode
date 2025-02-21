@@ -16,7 +16,7 @@ if sys.version_info < (3, 9):
 def run_solution(problem_number: int, solution_number: int):
     """執行 `題號/s{第 i 個解}.py` 的 `test()`"""
     
-    module_name = f"{problem_number}.s{solution_number}"  # 例如 '437.s1'
+    module_name = f"questions.{problem_number}.s{solution_number}"  # 例如 '437.s1'
     
     try:
         solution_module = importlib.import_module(module_name)
