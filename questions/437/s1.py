@@ -1,5 +1,5 @@
 from typing import Optional
-from utils import TreeNode, to_binary_tree
+from utils import TreeNode, array_to_binary_tree
 
 
 class Solution:
@@ -22,5 +22,5 @@ class Solution:
     
 def test():
     s = Solution()
-    print(s.pathSum(to_binary_tree([10,5,-3,3,2,None,11,3,-2,None,1]), 8))
-    print(s.pathSum(to_binary_tree([5,4,8,11,None,13,4,7,2,None,None,5,1]), 22))
+    print(s.pathSum(array_to_binary_tree([10,5,-3,3,2,None,11,3,-2,None,1]), 8))
+    print(s.pathSum(array_to_binary_tree([5,4,8,11,None,13,4,7,2,None,None,5,1]), 22))

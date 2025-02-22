@@ -1,5 +1,5 @@
 from typing import Optional
-from utils import TreeNode, to_binary_tree
+from utils import TreeNode, array_to_binary_tree
 
 
 class FindElements:
@@ -24,7 +24,7 @@ def test():
     ]
     for question in question_list:
         ans = [None]
-        tree = to_binary_tree(question[0][0])
+        tree = array_to_binary_tree(question[0][0])
         find_list = question[1:]
         s = FindElements(tree)
         for target in find_list:
